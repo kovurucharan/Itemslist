@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>User:<b>{{user.username}}</b><h3>Logged in Successfully</h3></p>
+<form method="post" action="/logout/">
+    {% csrf_token %}
+    <input type="submit" value="logout">
+
+</form> <br/><br/>
+<a href="/item/"><input type="submit" value="MENU"></a>
+</body>
+</html>

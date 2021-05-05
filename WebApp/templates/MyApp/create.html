@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<form action="/pro/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+   ItemName: <input type="text" name="iname"><br><br>
+   Ingredients:<input type="text" name="ingredients"><br><br>
+    Process: <textarea name="process"></textarea><br><br>
+    Image:<input type="file" name="image"/><br>
+    <input type="submit" value="Save"><br><br>
+</form>
+</body>
+<a href="cre/"><input type="submit" value="Back"></a>
+</html><br/><br/>
+
+<a href="/">LOGOUT</a>

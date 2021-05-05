@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ItemName:{{ jk.itemname}} <br><br>
+Ingredients:{{ jk.ingredients}} <br><br>
+Process:{{ jk.process}} <br><br>
+Image:<img src="{{jk.image.url}}"><br><br>
+
+</body>
+<a href="/item/"><input type="submit" value="Save"> <br><br></a><a href="/item/"><input type="submit" value="Back"></a>
+</html><br><br/>
+<a href="/">LOGOUT</a>
